@@ -115,7 +115,7 @@
     "dev": "webpack --watch --progress",
     "lint": "eslint . --ext .js",
     "2npm": "publish",
-    "start": "node server.js",
+    "start": "nohup npm start > /dev/null 2>&1&",
     "stop": "pkill --signal SIGINT cloudboost"
   },
   "babel": {

@@ -29,7 +29,7 @@ const appGet = app => app.get('/', (req, res) => {
     JSON.stringify({
       status: 200,
       version: pjson.version,
-      message: "This is CloudBoost API. If you're looking for the dashboard. It should be running on port 1440.",
+      message: 'This is CloudBoost API. There is no dashboard. It should be running on port 1440.',
     }),
   );
 });

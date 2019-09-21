@@ -1,0 +1,38 @@
+mongo:
+  image: 'mongo'
+  ports:
+    - 27017:27017
+  restart: always
+  volumes:
+    - '~/var/lib/mongodb:/var/lib/mongodb'
+
+redis:
+  image: 'redis'
+  ports:
+    - 6379:6379
+    - 16379:16379
+    - 26379:26379
+  restart: always
+# api:
+#   environment:
+#     - 'CLOUDBOOST_ANALYTICS_SERVICE_HOST=cluster-analytics.cloudboost.io'
+#     - "MAIL_PROVIDER= '<mail provider name>'"
+#     - "MAIL_PROVIDER_API_KEY= '<mail provider's api/auth key>'"
+#     - "DOMAIN= '<mail domain>'"
+#     - "FROM_EMAIL= '<email's from email>'"
+#     - "FROM_NAME= '<email's from name>'"
+#     - 'REDIS_HOST=192.168.0.19'
+#     - 'MONGO_HOST=192.168.0.19'
+#     # - 'MONGO_HOST=192.168.0.29'
+#   #  - 'REDIS_HOST=192.168.0.29'
+#   #  volumes:
+#   #   - '/etc/letsencrypt/archive/darknblack.duckdns.org-0002:/usr/src/config'
+#   image: 'cloudboost'
+#   links:
+#     - mongo
+#     - redis
+#   ports:
+#     - 4730:4730
+#     - 80:4730
+#     #   - 80:4730
+#     #   - 443:4730

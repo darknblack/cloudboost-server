@@ -4,6 +4,7 @@
 #     CloudBoost may be freely distributed under the Apache 2 License
 */
 /*  eslint global-require: "off" */
+process.title = 'cloudboost'; // to start and stop
 const fs = require('fs');
 const busboyBodyParser = require('busboy-body-parser');
 const path = require('path');

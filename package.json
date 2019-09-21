@@ -114,7 +114,9 @@
     "test-node": "./node_modules/.bin/mocha --reporter spec test/test.js --exit",
     "dev": "webpack --watch --progress",
     "lint": "eslint . --ext .js",
-    "2npm": "publish"
+    "2npm": "publish",
+    "start": "node server.js",
+    "stop": "pkill --signal SIGINT cloudboost"
   },
   "babel": {
     "presets": [

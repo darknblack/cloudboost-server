@@ -34,7 +34,7 @@ app.set('view engine', 'ejs');
 app.use('*/assets', express.static(path.join(__dirname, 'page-templates/assets')));
 app.use(
   bodyParser.urlencoded({
-    limit: '15mb',
+    limit: '20mb',
     extended: true,
   }),
 );
